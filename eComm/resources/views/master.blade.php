@@ -46,6 +46,11 @@
     .tranding-wrapper{
         margin: 30px;
     }
+    .cart-list-divider{
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
 </style>
 
 </html>
