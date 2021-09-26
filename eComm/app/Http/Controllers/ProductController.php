@@ -38,7 +38,14 @@ class ProductController extends Controller
 
     static function cartItem()
     {
-        $userId = Session::get('user')['id'];
+        //session check added to allow access with no session
+        if (Session::has('user')) {
+            $userId = Session::get('user')['id'];
         return Cart::where('user_id', $userId)->count();
+        }
+        else {
+            return 0;
+        }
+        
     }
 }
