@@ -36,6 +36,9 @@
     .trending-img{
         height: 100px;
     }
+    .detail-img{
+        height: 200px;
+    }
     .trending-item{
         float: left;
         width: 20%;

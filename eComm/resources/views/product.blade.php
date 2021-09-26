@@ -7,7 +7,7 @@
                 <?php $count = 0; ?>
                 @foreach ($products as $item)
                     <?php $count += 1; ?>
-
+                    <a href="detail/{{ $item['id'] }}">
                     <div class="carousel-item {{ $count == 1 ? 'active' : '' }}">
                         <img class="slider-img" src="{{ $item['gallery'] }}">
                         <div class="carrousel-caption slider-text">
@@ -15,7 +15,7 @@
                             <p>{{ $item['description'] }}</p>
                         </div>
                     </div>
-
+                </a>
                 @endforeach
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -35,12 +35,14 @@
             
             @foreach ($products as $item)
                
-                <div class="trending-item">
-                    <img class="trending-img" src="{{ $item['gallery'] }}">
-                    <div class="">
-                        <h3>{{ $item['name'] }}</h3>
+                <a href="detail/{{ $item['id'] }}">
+                    <div class="trending-item">
+                        <img class="trending-img" src="{{ $item['gallery'] }}">
+                        <div class="">
+                            <h3>{{ $item['name'] }}</h3>
+                        </div>
                     </div>
-                </div>
+                </a>
 
             @endforeach
         </div>
