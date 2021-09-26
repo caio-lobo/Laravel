@@ -34,5 +34,6 @@ Route::post("cart_item", [ProductController::class, 'cartItem']);
 Route::get("cart_list", [ProductController::class, 'cartList']);
 Route::get("order_now", [ProductController::class, 'orderNow']);
 Route::post("order_place", [ProductController::class, 'orderPlace']);
+Route::get("my_orders", [ProductController::class, 'myOrders']);
 
 
