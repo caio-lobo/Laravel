@@ -31,36 +31,38 @@
                     </tbody>
                 </table>
                 <div>
-                    <form>
+                    <form action="/order_place" method="POST">
+                        @csrf
 
                         <div class="form-group ">
                             <label for="exampleFormControlTextarea1" class="form-label">Delivery address</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <textarea name="address" class="form-control" id="exampleFormControlTextarea1"
+                                rows="3"></textarea>
                         </div>
 
 
 
                         <div class="form-group ">
                             <label for="" class="form-label">Payment method</label>
-                            
-                            
+
+
 
 
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <input class="form-check-input" value="1" type="radio" name="payment" id="flexRadioDefault1">
                             <label class="form-check-label" for="flexRadioDefault1">
                                 Online payment
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <input class="form-check-input" value="2" type="radio" name="payment" id="flexRadioDefault2">
                             <label class="form-check-label" for="flexRadioDefault2">
                                 EMI payment
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <input class="form-check-input" value="3" type="radio" name="payment" id="flexRadioDefault2">
                             <label class="form-check-label" for="flexRadioDefault2">
                                 Payment on delivery
                             </label>
