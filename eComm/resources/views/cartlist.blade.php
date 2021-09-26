@@ -6,6 +6,7 @@
             <div class="col-sm-10">
                 <div class="tranding-wrapper">
                     <h3>Result of products </h3>
+                    <a class="btn btn-success" href="order_now">order now</a><br><br>
 
                     @foreach ($products as $item)
                         <div class="row searched-item cart-list-divider">
