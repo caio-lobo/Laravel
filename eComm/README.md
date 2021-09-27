@@ -1,3 +1,10 @@
+Code based on this video (https://www.youtube.com/watch?v=6R5hMKAW7n4)
+
+however, I used more a more recent version which needed some troubleshooting to fint the proper replacements for the tools used on the video example.
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
